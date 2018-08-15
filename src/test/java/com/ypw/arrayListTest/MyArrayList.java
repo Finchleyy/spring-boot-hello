@@ -37,7 +37,7 @@ public class MyArrayList {
     }
 
     public Object get(int index) {
-        if (index < size) {
+        if (index < size && index > 0) {
             return elementData[index];
         } else {
             return null;

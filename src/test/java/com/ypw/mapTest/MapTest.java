@@ -9,9 +9,14 @@ package com.ypw.mapTest;
  **/
 public class MapTest {
     public static void main(String[] args) {
-        YPWMap ypwMap = new YPWMap();
+       /* YPWMap ypwMap = new YPWMap();
         ypwMap.put("111", "yyyyy");
-        System.out.println(ypwMap.get("111"));
+        System.out.println(ypwMap.get("111"));*/
+        MyMap myMap = new MyMap();
+        myMap.put("key","value1");
+        myMap.put("key","value2");
+
+        System.out.println(myMap.get("key"));
     }
 
 

@@ -47,10 +47,26 @@ public class MyLinkedList {
 
     public Object get(int index) {
         Node node = node(index);
-        if(node!=null){
+        if (node != null) {
             return node.getObj();
-        }else {
+        } else {
             return null;
         }
     }
+
+    public Object get(Object object) {
+        Node nodeTemp = null;
+        if (firstNode != null) {
+            nodeTemp = firstNode;
+            for (int i = 0; i < size; i++) {
+                if (nodeTemp.obj.equals(object)) {
+                    return nodeTemp.getObj();
+                } else {
+                    nodeTemp = nodeTemp.next;
+                }
+            }
+        }
+        return null;
+    }
+
 }

@@ -1,0 +1,27 @@
+server:
+  port: 8080
+---
+#person:
+#  last-name: zhangsan
+#  age: 18
+#  boss: false
+#  birth: 2018/12/07
+#  maps:
+#    k1: 111
+#    k2: 222
+#  lists:
+#    - person
+#    - list2
+#  dog:
+#    name: 狗
+#    age: 66
+---
+server:
+  port: 8181
+spring:
+  profiles: dev
+---
+server:
+  port: 8282
+spring:
+  profiles: prod

@@ -15,5 +15,6 @@ public class TestArray {
         int intArray[] = new int[1];
         intArray[0] = 665;
         System.out.println(intArray[0]);
+
     }
 }

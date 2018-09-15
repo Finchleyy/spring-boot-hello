@@ -8,6 +8,7 @@ package com.ypw;
  * @Version 1.0
  **/
 public class Test {
+
     public int testMethod() {
         int i = 666;
         int j = 888;

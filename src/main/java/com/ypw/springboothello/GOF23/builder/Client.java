@@ -9,6 +9,4 @@ public class Client {
         System.out.println(airShip.getEscapeTower().getName());
         airShip.launch();
     }
-
-
 }

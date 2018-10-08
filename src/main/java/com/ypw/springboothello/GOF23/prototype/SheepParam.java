@@ -1,6 +1,8 @@
 package com.ypw.springboothello.GOF23.prototype;
 
-public class SheepParam implements Cloneable{
+import java.io.Serializable;
+
+public class SheepParam implements Cloneable, Serializable {
     private String name;
 
     @Override

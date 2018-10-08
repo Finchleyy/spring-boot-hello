@@ -1,8 +1,9 @@
 package com.ypw.springboothello.GOF23.prototype;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class SheepDeep implements Cloneable{
+public class SheepDeep implements Cloneable, Serializable {
     private String sname;
     private Date birthday;
     private SheepParam sheepParam;

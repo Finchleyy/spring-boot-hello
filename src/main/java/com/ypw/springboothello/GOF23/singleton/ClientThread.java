@@ -45,7 +45,6 @@ public class ClientThread {
             }).start();
             //计数减1,减完唤醒全部线程
             countDownLatch.countDown();
-
         }
         //countDownLatch.await();//阻塞main线程.直到所有线程执行完毕
         long end = System.currentTimeMillis();

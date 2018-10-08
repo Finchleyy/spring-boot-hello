@@ -1,6 +1,5 @@
 package com.ypw.springboothello.GOF23.adapter;
 
-import org.junit.jupiter.api.Test;
 
 /**
  *

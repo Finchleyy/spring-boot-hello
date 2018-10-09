@@ -1,16 +1,16 @@
 package com.ypw.springboothello.GOF23.adapter;
 
-
 /**
- *
  * 客户端
+ *
+ * @param
  * @author yupengwu
  * @date 2018/10/8 14:22
- * @param
  * @return
  */
+
 public class Client {
-    public void test1(Target target){
+    public void test1(Target target) {
         target.handleReq();
     }
 

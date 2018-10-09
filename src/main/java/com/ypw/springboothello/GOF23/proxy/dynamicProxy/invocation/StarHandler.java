@@ -1,4 +1,4 @@
-package com.ypw.springboothello.GOF23.proxy.dynamicProxy;
+package com.ypw.springboothello.GOF23.proxy.dynamicProxy.invocation;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -16,8 +16,8 @@ public class StarHandler implements InvocationHandler {
         if(method.getName().equals("sing")){
             System.out.println("捕捉到sing方法!~!~!");
         }
-        method.invoke(realStar, args);
+        Object invoke = method.invoke(realStar, args);
         System.out.println("代理类后置处理.........");
-        return null;
+        return invoke;
     }
 }

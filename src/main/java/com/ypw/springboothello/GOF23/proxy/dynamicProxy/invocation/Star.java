@@ -1,4 +1,4 @@
-package com.ypw.springboothello.GOF23.proxy.dynamicProxy;
+package com.ypw.springboothello.GOF23.proxy.dynamicProxy.invocation;
 
 public interface Star {
 	/**
@@ -20,5 +20,5 @@ public interface Star {
 	/**
 	 * 收钱
 	 */
-	void collectMoney();
+	String collectMoney();
 }

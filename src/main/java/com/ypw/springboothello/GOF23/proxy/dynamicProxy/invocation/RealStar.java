@@ -1,4 +1,4 @@
-package com.ypw.springboothello.GOF23.proxy.dynamicProxy;
+package com.ypw.springboothello.GOF23.proxy.dynamicProxy.invocation;
 
 public class RealStar implements Star {
     @Override
@@ -22,7 +22,8 @@ public class RealStar implements Star {
     }
 
     @Override
-    public void collectMoney() {
+    public String collectMoney() {
         System.out.println("RealStar.collectMoney()");
+        return "收到6666万";
     }
 }

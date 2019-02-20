@@ -12,13 +12,13 @@ public class YPWMap {
     int size;
 
     public void put(Object key, Object value) {
-        MyEntry myEntry = new MyEntry(key,value);
+        MyEntry myEntry = new MyEntry(key, value);
         myEntries[size++] = myEntry;
     }
 
-    public Object get(Object key){
-        for(int i=0;i<size;i++){
-            if(myEntries[i].key.equals(key)){
+    public Object get(Object key) {
+        for (int i = 0; i < size; i++) {
+            if (myEntries[i].key.equals(key)) {
                 return myEntries[i].value;
             }
         }

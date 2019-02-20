@@ -48,7 +48,7 @@ public class group {
                 Collectors.groupingBy(Student::getIwantStudent, Collectors.maxBy((o1, o2) -> o1.getHight().compareTo(o2.getHight()))));
 
         // 遍历获取对象信息
-        for (Map.Entry<Long,Optional<Student>> entry: allMapTask.entrySet()) {
+        for (Map.Entry<Long, Optional<Student>> entry : allMapTask.entrySet()) {
             Student student = entry.getValue().get();
             System.out.println(student.toString());
         }

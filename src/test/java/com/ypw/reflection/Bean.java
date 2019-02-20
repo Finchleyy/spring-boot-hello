@@ -10,7 +10,8 @@ package com.ypw.reflection;
 public class Bean {
     private String name;
     private String age;
-    public void testMethod(){
+
+    public void testMethod() {
         System.out.println("test Method Invoke....");
     }
 

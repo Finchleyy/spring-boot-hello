@@ -5,11 +5,11 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- *
  * 测试反射和反序列化破解单例
+ *
+ * @param
  * @author yupengwu
  * @date 2018/9/30 09:58
- * @param
  * @return
  */
 public class ClientReflect {
@@ -22,13 +22,12 @@ public class ClientReflect {
         Constructor<Singleton06> c = singleton06Class.getDeclaredConstructor(null);
         //跳过安全检查
         c.setAccessible(true);
-        Singleton06  s3 = c.newInstance();
-        Singleton06  s4 = c.newInstance();
+        Singleton06 s3 = c.newInstance();
+        Singleton06 s4 = c.newInstance();
         System.out.println(s3);
         System.out.println(s4);
-        System.out.println(s3.b);
+        System.out.println(Singleton06.b);
         //创建了两个对象(被破解)
-
 
 
         //通过反序列化创建对象

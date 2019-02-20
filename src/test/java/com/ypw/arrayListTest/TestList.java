@@ -43,9 +43,9 @@ public class TestList {
             System.out.println(listDelete.get(i));
         }*/
         Iterator iterator = listDelete.iterator();
-        while (iterator.hasNext()){
-            String next = (String)iterator.next();
-            if("111".equals(next)){
+        while (iterator.hasNext()) {
+            String next = (String) iterator.next();
+            if ("111".equals(next)) {
                 iterator.remove();
             }
         }

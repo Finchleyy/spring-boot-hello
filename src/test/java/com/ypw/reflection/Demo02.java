@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 
 /**
  * @ClassName Demo02
- * @Description 获取属性,方法,构造器
+ * @Description 获取属性, 方法, 构造器
  * @Author yupengwu
  * @Date 2018/9/9 16:17
  * @Version 1.0

@@ -7,7 +7,7 @@ package com.ypw.springboothello.test.innerClass;
  * @Date 2018/8/2 16:26
  * @Version 1.0
  **/
-class Outer{
+class Outer {
     public static void main(String[] args) {
         InnerClass.StaticClass staticClass = new InnerClass.StaticClass();
         staticClass.test();
@@ -22,7 +22,8 @@ public class InnerClass {
     /*private */static class StaticClass {
         int a = 3;
         static int b = 4;
-        public void test(){
+
+        public void test() {
             System.out.println(d);//可以访问d,但是不能访问c
         }
     }

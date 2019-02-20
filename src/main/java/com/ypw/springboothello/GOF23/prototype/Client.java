@@ -3,19 +3,20 @@ package com.ypw.springboothello.GOF23.prototype;
 import org.junit.jupiter.api.Test;
 
 import java.util.Date;
+
 /**
- *
  * 原型模式
+ *
+ * @param
  * @author yupengwu
  * @date 2018/10/8 13:49
- * @param
  * @return
  */
 public class Client {
     @Test
     public void testClone() throws CloneNotSupportedException {
         SheepParam jam = new SheepParam("Jam");
-        Sheep sheep = new Sheep("原型", new Date(),jam);
+        Sheep sheep = new Sheep("原型", new Date(), jam);
         System.out.println(sheep);
         System.out.println(sheep.getSname());
         System.out.println(sheep.getBirthday());

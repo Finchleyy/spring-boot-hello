@@ -2,6 +2,14 @@ package com.ypw.springboothello.GOF23.proxy.dynamicProxy.invocation;
 
 import java.lang.reflect.Proxy;
 
+/**
+ * JDK方式实现动态代理(效率比较低,被代理对象需要实现接口(传递接口实现动态代理))
+ *
+ * @param
+ * @author yupengwu
+ * @date 2018/10/10 09:55
+ * @return
+ */
 public class Client {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());

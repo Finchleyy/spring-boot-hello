@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 public class Client {
     @Test
-    public void test(){
+    public void test() {
         RealStar realStar = new RealStar();
         ProxyStar proxyStar = new ProxyStar(realStar);
         proxyStar.sing();

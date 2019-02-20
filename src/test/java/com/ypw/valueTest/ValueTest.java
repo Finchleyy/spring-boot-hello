@@ -10,7 +10,7 @@ package com.ypw.valueTest;
  **/
 public class ValueTest {
     public static void main(String[] args) {
-        System.out.println(2.0/0);
+        System.out.println(2.0 / 0);
         int a = 788_909_00;
         System.out.println(a);
 

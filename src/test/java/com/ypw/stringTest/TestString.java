@@ -8,11 +8,11 @@ package com.ypw.stringTest;
  * @Version 1.0
  **/
 public class TestString {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         String a = "a";
-        for (int i = 0; i <1000 ; i++) {
+        for (int i = 0; i < 1000; i++) {
             //Thread.sleep(100);
-            a = a+i;
+            a = a + i;
             System.out.println(a);
         }
     }

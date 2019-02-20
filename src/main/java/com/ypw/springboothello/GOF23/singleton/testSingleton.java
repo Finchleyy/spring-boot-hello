@@ -49,7 +49,7 @@ public class testSingleton {
         //测试枚举创建的单例
         Singleton04 instance = Singleton04.INSTANCE;
         Singleton04 instance1 = Singleton04.INSTANCE;
-        System.out.println(instance==instance1);
+        System.out.println(instance == instance1);
         System.out.println(instance.toString());
         System.out.println(instance1.toString());
     }

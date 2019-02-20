@@ -8,7 +8,9 @@ package com.ypw.adapter;
  * @Version 1.0
  **/
 public interface Listener {
-    int aa=0;
-    public void interface1();
-    public void interface2();
+    int aa = 0;
+
+    void interface1();
+
+    void interface2();
 }

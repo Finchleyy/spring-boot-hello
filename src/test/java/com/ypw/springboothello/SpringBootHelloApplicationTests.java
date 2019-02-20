@@ -18,7 +18,7 @@ public class SpringBootHelloApplicationTests {
     ApplicationContext ioc;
 
     @Test
-    public void testHelloService(){
+    public void testHelloService() {
         boolean b = ioc.containsBean("helloService");
         System.out.println(b);
     }

@@ -29,7 +29,7 @@ public class InerClass {
     Runnable runnable = new Runnable() {//定义了匿名内部类的类体;创建了一个匿名内部类的实例
         @Override
         public void run() {
-            String s = ""+"666";
+            String s = "" + "666";
         }
     };
 

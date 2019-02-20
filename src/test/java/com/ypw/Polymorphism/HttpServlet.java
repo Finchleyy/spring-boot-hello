@@ -8,11 +8,12 @@ package com.ypw.Polymorphism;
  * @Version 1.0
  **/
 public class HttpServlet {
-    public void service(){
+    public void service() {
         System.out.println("serveletService");
         doGet();
     }
-    public void doGet(){
+
+    public void doGet() {
         System.out.println("serveletDoGet");
     }
 }

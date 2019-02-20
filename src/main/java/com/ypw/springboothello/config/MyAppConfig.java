@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyAppConfig {
     @Bean
-    public HelloService helloService(){
+    public HelloService helloService() {
         System.out.println("添加helloService.....");
         return new HelloService();
     }

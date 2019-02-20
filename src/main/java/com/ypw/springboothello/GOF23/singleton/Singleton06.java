@@ -15,12 +15,14 @@ import java.io.Serializable;
  */
 public class Singleton06 implements Serializable {
     private static /*volatile*/ Singleton06 instance;
+
     static {
-        b=6;
+        b = 6;
         System.out.println("静态代码块");
     }
 
     static int b = 9;
+
     private Singleton06() {
         System.out.println("调用了无参构造方法");
         //检查如果已经创建了对象就抛出异常,防止反射的newInstance
@@ -43,6 +45,7 @@ public class Singleton06 implements Serializable {
         }
         return instance;
     }
+
     //反序列化时，如果定义了readResolve()则直接返回此方法指定的对象。而不需要单独再创建新对象！
     private Object readResolve() throws ObjectStreamException {
         return instance;

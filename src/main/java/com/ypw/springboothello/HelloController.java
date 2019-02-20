@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @ClassName HelloController
  * @Description TODO
@@ -19,8 +21,9 @@ public class HelloController {
     private Person person;
 
     @RequestMapping("/hello")
-    public String hello() {
-        return "Hello Sping Boot!~sdfasdfasfasdf";
+    public String hello(HttpServletRequest request) {
+        return request.getServerName() + request.getServerPort() + request.getContextPath() + request.getServletPath();
+
     }
 
     @RequestMapping("/helloException")
@@ -28,6 +31,7 @@ public class HelloController {
         int i = 1 / 0;
         return "Hello Sping Boot!~sdfasdfasfasdf";
     }
+
     @RequestMapping("/getPerson")
     public Person getPerson() {
         //System.out.println(applicationContext);

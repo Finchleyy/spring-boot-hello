@@ -7,9 +7,9 @@ import java.util.Date;
 
 public class Client3 {
     @Test
-    public void testClone() throws CloneNotSupportedException, IOException, ClassNotFoundException {
+    public void testClone() throws IOException, ClassNotFoundException {
         SheepParam jam = new SheepParam("Jam");
-        Sheep sheep = new Sheep("原型", new Date(),jam);
+        Sheep sheep = new Sheep("原型", new Date(), jam);
         System.out.println(sheep);
         System.out.println(sheep.getSname());
         System.out.println(sheep.getBirthday());

@@ -9,11 +9,11 @@ package com.ypw.annotation;
  **/
 @TableAnnotation("tb_student")
 public class Student {
-    @FieldAnnotation(columnName = "id",type = "int" ,length = 10)
+    @FieldAnnotation(columnName = "id", type = "int", length = 10)
     private String id;
-    @FieldAnnotation(columnName = "name",type = "varchar" ,length = 10)
+    @FieldAnnotation(columnName = "name", type = "varchar", length = 10)
     private String studentName;
-    @FieldAnnotation(columnName = "age",type = "int" ,length = 10)
+    @FieldAnnotation(columnName = "age", type = "int", length = 10)
     private int age;
 
     public String getId() {

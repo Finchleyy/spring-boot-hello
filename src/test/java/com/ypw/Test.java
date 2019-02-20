@@ -9,7 +9,15 @@ package com.ypw;
  **/
 public class Test {
 
-
+    @org.junit.Test
+    public void test() {
+        int i = 1;
+        i = i++;
+        System.out.println(i);
+        int j = 1;
+        j = ++j;
+        System.out.println(j);
+    }
     public int testMethod() {
         int i = 666;
         int j = 888;

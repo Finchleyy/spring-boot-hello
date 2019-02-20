@@ -8,7 +8,7 @@ package com.ypw.Polymorphism;
  * @Version 1.0
  **/
 public class MyServlet extends HttpServlet {
-    public void doGet(){
+    public void doGet() {
         System.out.println("myServeletDoGet");
     }
 }

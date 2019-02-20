@@ -16,10 +16,12 @@ public class StaticProxy {
         proxy.marry();
     }
 }
+
 //共同的接口
 interface Marry {
-    public abstract void marry();
+    void marry();
 }
+
 //真实角色
 class You implements Marry {
 
@@ -28,19 +30,23 @@ class You implements Marry {
         System.out.println("you marry");
     }
 }
+
 //代理角色
-class proxy implements Marry{
+class proxy implements Marry {
     private Marry you;
 
     public proxy(Marry you) {
         this.you = you;
     }
-    public void before(){
+
+    public void before() {
         System.out.println("before.....");
     }
-    public void after(){
+
+    public void after() {
         System.out.println("after.....");
     }
+
     @Override
     public void marry() {
         before();

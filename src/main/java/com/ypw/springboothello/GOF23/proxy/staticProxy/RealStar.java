@@ -1,6 +1,6 @@
 package com.ypw.springboothello.GOF23.proxy.staticProxy;
 
-public class RealStar implements Star{
+public class RealStar implements Star {
     @Override
     public void confer() {
         System.out.println("RealStar.confer()");

@@ -15,9 +15,9 @@ public class main {
         new task2().start();*/
         new Thread(new Task11()).start();
         new Thread(new Task22()).start();
-        new Thread(()->{
+        new Thread(() -> {
             for (int i = 0; i < 10; i++) {
-            System.out.println(i);
+                System.out.println(i);
             }
         }).start();
 

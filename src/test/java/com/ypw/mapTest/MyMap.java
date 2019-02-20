@@ -24,8 +24,8 @@ public class MyMap {
         } else {
             MyLinkedList myLinkedListTemp = myEntries[hash];
             for (int i = 0; i < myLinkedListTemp.size(); i++) {
-                MyEntry myEntry1 =(MyEntry) myLinkedListTemp.get(i);
-                if(myEntry1.key.equals(key)){
+                MyEntry myEntry1 = (MyEntry) myLinkedListTemp.get(i);
+                if (myEntry1.key.equals(key)) {
                     myEntry1.setValue(value);//添加时判定key重复,直接覆盖value
                 }
             }
@@ -41,8 +41,8 @@ public class MyMap {
         } else {
             MyLinkedList myLinkedListTemp = myEntries[hash];
             for (int i = 0; i < myLinkedListTemp.size(); i++) {
-                MyEntry myEntry =(MyEntry) myLinkedListTemp.get(i);
-                if(myEntry.key.equals(key)){
+                MyEntry myEntry = (MyEntry) myLinkedListTemp.get(i);
+                if (myEntry.key.equals(key)) {
                     return myEntry.value;
                 }
             }

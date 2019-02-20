@@ -9,23 +9,23 @@ public class SocketServer {
         try {
             serverSocket = new ServerSocket(8888); //启动一个服务
 
-            while (true){
+            while (true) {
                 Socket socket = serverSocket.accept();//等待一个接收请求
-                new Thread(()->{
+                new Thread(() -> {
                     try {
                         //读取数据
                         BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                         //发送数据
                         PrintWriter writer = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
 
-                        while (true){
+                        while (true) {
                             String clientData = reader.readLine();
 
-                            if(clientData == null){
+                            if (clientData == null) {
                                 break;
                             }
 
-                            System.out.println("服务端接收到的数据："+clientData);
+                            System.out.println("服务端接收到的数据：" + clientData);
 
                             writer.println("hello mike");
                             writer.flush();
@@ -39,8 +39,8 @@ public class SocketServer {
 
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            if(serverSocket!=null){
+        } finally {
+            if (serverSocket != null) {
                 serverSocket.close();
             }
         }

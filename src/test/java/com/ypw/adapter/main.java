@@ -22,7 +22,7 @@ public class main {
             }
         });*/
 
-       //使用适配器可以选择要重写的接口(adapter抽象类中已经有了所有的空实现)
+        //使用适配器可以选择要重写的接口(adapter抽象类中已经有了所有的空实现)
         new Adapter().adapter(new ListernerAdapter() {
             @Override
             public void interface1() {

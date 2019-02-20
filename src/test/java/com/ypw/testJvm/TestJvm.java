@@ -11,9 +11,10 @@ import com.sun.org.apache.xpath.internal.operations.String;
  **/
 public class TestJvm {
     static int i = 0;
-    public static void stackOverFlow(){
-        System.out.println("==============="+i++);
-        if(i<10){
+
+    public static void stackOverFlow() {
+        System.out.println("===============" + i++);
+        if (i < 10) {
             stackOverFlow();
         }
     }

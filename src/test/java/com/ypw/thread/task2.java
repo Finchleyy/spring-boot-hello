@@ -7,11 +7,11 @@ package com.ypw.thread;
  * @Date 2018/9/2 13:56
  * @Version 1.0
  **/
-public class task2 extends Thread{
+public class task2 extends Thread {
     @Override
     public void run() {
-        for (int i = 0; i <100 ; i++) {
-            System.out.println("Task2 start=========="+i);
+        for (int i = 0; i < 100; i++) {
+            System.out.println("Task2 start==========" + i);
         }
     }
 }

@@ -12,7 +12,7 @@ import java.util.concurrent.CountDownLatch;
  * @return
  */
 public class ClientThread {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         int threadCount = 10;
         long start = System.currentTimeMillis();
 

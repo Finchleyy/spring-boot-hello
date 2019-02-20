@@ -1,23 +1,23 @@
 package com.ypw.springboothello.GOF23.factory.abstractFactory;
 
 public interface Seat {
-	void massage();
+    void massage();
 }
 
 class LuxurySeat implements Seat {
 
-	@Override
-	public void massage() {
-		System.out.println("可以自动按摩！");
-	}
-	
+    @Override
+    public void massage() {
+        System.out.println("可以自动按摩！");
+    }
+
 }
 
 class LowSeat implements Seat {
 
-	@Override
-	public void massage() {
-		System.out.println("不能按摩！");
-	}
-	
+    @Override
+    public void massage() {
+        System.out.println("不能按摩！");
+    }
+
 }

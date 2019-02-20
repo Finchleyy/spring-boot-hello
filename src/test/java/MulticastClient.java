@@ -15,11 +15,11 @@ public class MulticastClient {
             MulticastSocket socket = new MulticastSocket(5555);
             socket.joinGroup(group); //加入指定的组
             byte[] bytes = new byte[256];
-            while (true){
-                DatagramPacket datagramPacket = new DatagramPacket(bytes,bytes.length);
+            while (true) {
+                DatagramPacket datagramPacket = new DatagramPacket(bytes, bytes.length);
                 socket.receive(datagramPacket);
                 String string = new String(datagramPacket.getData());
-                System.out.println("接收到的数据:"+string);
+                System.out.println("接收到的数据:" + string);
             }
         } catch (UnknownHostException e) {
             e.printStackTrace();

@@ -13,8 +13,8 @@ public class MapTest {
         ypwMap.put("111", "yyyyy");
         System.out.println(ypwMap.get("111"));*/
         MyMap myMap = new MyMap();
-        myMap.put("key","value1");
-        myMap.put("key","value2");
+        myMap.put("key", "value1");
+        myMap.put("key", "value2");
 
         System.out.println(myMap.get("key"));
     }

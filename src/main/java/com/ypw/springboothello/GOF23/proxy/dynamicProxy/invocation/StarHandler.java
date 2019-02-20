@@ -13,7 +13,7 @@ public class StarHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("代理类前置处理.........");
-        if(method.getName().equals("sing")){
+        if (method.getName().equals("sing")) {
             System.out.println("捕捉到sing方法!~!~!");
         }
         Object invoke = method.invoke(realStar, args);

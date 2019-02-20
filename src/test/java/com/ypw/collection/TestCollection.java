@@ -12,6 +12,6 @@ public class TestCollection {
         Object[] objects = new Object[10];
 
         Object[] objects1;
-        
+
     }
 }

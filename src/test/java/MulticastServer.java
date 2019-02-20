@@ -16,10 +16,10 @@ public class MulticastServer {
 
             MulticastSocket socket = new MulticastSocket();
 
-            for (int i = 0;i<10;i++){
+            for (int i = 0; i < 10; i++) {
                 String data = "hello moon";
                 byte[] bytes = data.getBytes();
-                socket.send(new DatagramPacket(bytes,bytes.length,group,5555));
+                socket.send(new DatagramPacket(bytes, bytes.length, group, 5555));
                 TimeUnit.SECONDS.sleep(2);
             }
 

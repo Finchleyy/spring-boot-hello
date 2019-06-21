@@ -1,9 +1,7 @@
 package com.ypw.springboothello.GOF23.singleton;
 
-import sun.security.jca.GetInstance;
-
 /**
- * 懒汉式(虽然经过doublechecked但是因为虚拟机指令重排可能出现线程不安全)
+ * 懒汉式(虽然经过doublechecked,但是因为虚拟机指令重排可能出现线程不安全)
  * instance上使用volatile防止指令重排
  *
  * @param

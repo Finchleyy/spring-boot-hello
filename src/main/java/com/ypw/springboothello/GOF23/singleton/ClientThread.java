@@ -12,7 +12,7 @@ import java.util.concurrent.CountDownLatch;
  * @return
  */
 public class ClientThread {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int threadCount = 10;
         long start = System.currentTimeMillis();
 
@@ -30,13 +30,14 @@ public class ClientThread {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    for (int i = 0; i < 10000000; i++) {
+                    for (int i = 0; i < 10; i++) {
                         //静态内部类
                         //Singleton01 singleton01 = Singleton01.getSingleton01();
                         //饿汉式
                         //Singleton02 instance = Singleton02.getInstance();
                         //懒汉式
-                        Singleton03 instance = Singleton03.getInstance();
+                        Singleton01 instance = Singleton01.getSingleton01();
+                        System.out.println(instance);
                         //枚举
                         //Singleton04 instance = Singleton04.INSTANCE;
                         //System.out.println(instance);
@@ -46,7 +47,7 @@ public class ClientThread {
             //计数减1,减完唤醒全部线程
             countDownLatch.countDown();
         }
-        //countDownLatch.await();//阻塞main线程.直到所有线程执行完毕
+        countDownLatch.await();//阻塞main线程.直到所有线程执行完毕
         long end = System.currentTimeMillis();
         System.out.println(end - start);
     }

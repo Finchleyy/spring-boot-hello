@@ -2,8 +2,6 @@ package com.ypw.springboothello.GOF23.proxy.dynamicProxy.cglib;
 
 import org.springframework.cglib.proxy.Enhancer;
 
-import java.lang.reflect.Proxy;
-
 /**
  * cglib实现动态代理(基于字节码,运行效率高)
  *

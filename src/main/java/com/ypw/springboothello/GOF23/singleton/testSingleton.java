@@ -1,7 +1,5 @@
 package com.ypw.springboothello.GOF23.singleton;
 
-import static sun.jvm.hotspot.runtime.PerfMemory.start;
-
 public class testSingleton {
     public static void main(String[] args) {
         //多线程测试静态内部类单例

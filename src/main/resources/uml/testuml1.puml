@@ -1,0 +1,16 @@
+@startuml
+actor Actor
+Alice -> Bob: 认证请求
+return 认证失败
+Alice -> Log ++ : 测试内容
+Log -> Log : AAAA
+return done
+autonumber 1.1
+group 我自己的标签 [我自己的标签2]
+    Alice -[#red]> Log : 开始记录日志
+    loop 1000次
+        Alice -> Bob: DNS攻击
+    end
+    Alice -> Log : 结束记录日志
+end
+@enduml

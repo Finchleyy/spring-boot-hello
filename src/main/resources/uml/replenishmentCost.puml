@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor 实施人员 as actor
+participant 报价配置 as config
+participant DIP部品 as dip
+participant 规则引擎 as rule
+database mysql
+
+group 部品配置报价
+    actor->config : 新增报价配置
+    config->dip : 查询部品分类
+    return 返回部品分类信息
+    config->dip : 查询品牌
+    return 返回品牌信息
+    config->dip : 查询材质
+    return 返回材质信息
+    actor->config : 选择部品参数配置
+    actor-> config: 补充工程量,选择展示形式
+    config-> mysql : 入库保存完成
+end
+
+autonumber
+group 方案配置报价
+    actor->config :新增报价配置
+    config->rule : 查询规则场景
+    return 返回规则场景信息
+    config->dip : 查询品牌
+    return 返回品牌信息
+    config->dip : 查询附加条件,加工方式
+    return 返回附加条件,加工方式
+    actor->config : 选择部品参数配置
+    actor-> config: 补充工程量,选择展示形式
+    config-> mysql : 入库保存完成
+end
+
+@enduml

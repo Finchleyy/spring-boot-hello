@@ -1,16 +1,22 @@
 @startuml
-actor Actor
-Alice -> Bob: 认证请求
+actor tester
+participant service1
+participant service2
+participant service3
+database Mysql
+
+service1 -> service2
+service2 -> service3: 认证请求
 return 认证失败
-Alice -> Log ++ : 测试内容
-Log -> Log : AAAA
+service2 -> Mysql ++ : 测试内容
+service3 -> service3 : 回环cycle
 return done
 autonumber 1.1
 group 我自己的标签 [我自己的标签2]
-    Alice -[#red]> Log : 开始记录日志
+    service3 -[#red]> Log : 开始记录日志
     loop 1000次
-        Alice -> Bob: DNS攻击
+        service3 -> service2: DNS攻击
     end
-    Alice -> Log : 结束记录日志
+    service3 -> Log : 结束记录日志
 end
 @enduml
